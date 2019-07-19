@@ -6,9 +6,15 @@
     flex-direction: @direct;
 }
 
-.button(@color, @radius) {
-    background-color: @color;
-    border-radius: @radius;
-    height: 45px;
-    width: 110px;
+.button(@height, @width) {
+    background-color: @btn-bg-color;
+    color: @porcelain;
+    border-radius: 10px;
+    height: @height;
+    width: @width;
+
+    &:hover {
+        color: @btn-bg-color;
+        background-color:@porcelain;;
+      }
 }
