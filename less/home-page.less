@@ -18,12 +18,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+// 7777&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    .sky {
+      @phone {  
+        display: none;
+      }
     }
   }
 
@@ -58,6 +65,15 @@
       }
 
       .btn {
+         .button(@btn-bg-color, 10px);
+         .justifyflex(center, column);
+         color: @porcelain;
+         align-items: center;
+         font-size: 20px;
+      }
+
+      @phone {
+        flex-direction: column-reverse;
       }
     }
 
