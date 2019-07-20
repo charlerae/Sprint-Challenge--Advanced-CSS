@@ -4,6 +4,17 @@
 
   .intro {
 
+    
+
+    img {
+
+      @media @phone {
+        width: 96%;
+        .center();
+        margin-left: 2%;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -77,26 +88,36 @@
       }
 
       .btn {
-        .button(45px, 110px);
-        .justifyflex(center, column);
-        align-items: center;
-        font-size: 20px;
+      .button(45px, 110px);
+      .justifyflex(center, column);
+      align-items: center;
+      font-size: 20px;
 
-        @media @phone {
-          width: 100%;
-        }
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-    
-      img {
+
+      @media @phone {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
+        // margin-left: 2%;
       }
+    
+      // img {
+      //   width: 100%;
+      //   height: auto;
+      //   border-radius: 10px;
+      //   background-color: red;
+      // }
     }
+  }
+
+  footer{
+    margin-bottom: 10px;
   }
 }  
 }
